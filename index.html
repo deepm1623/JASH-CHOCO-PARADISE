@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jash Choco Paradise</title>
+    <link rel="website icon" type="png" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="brand-name">
+            JASH CHOCO PARADISE
+        </div>
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo" class="nav-logo">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Jash Choco Paradise 🍫</h2>
+            <p>Experience the finest chocolates, crafted with passion.</p>
+            <a href="#products" class="btn">Explore Chocolates</a>
+        </div>
+    </section>
+
+    <!-- Product Showcase -->
+    <section id="products" class="product-container">
+        <div class="card">
+            <div class="circle"><h2>Dark Choco</h2></div>
+            <img src="dark.png" alt="Dark Chocolate" class="product_img">
+        </div>
+        <div class="card">
+            <div class="circle"><h2>Milk Choco</h2></div>
+            <img src="milk.png" alt="Milk Chocolate" class="product_img">
+        </div>
+        <div class="card">
+            <div class="circle"><h2>White Choco</h2></div>
+            <img src="white.png" alt="White Chocolate" class="product_img">
+        </div>
+        <div class="card">
+            <div class="circle"><h2>Hazelnut</h2></div>
+            <img src="hazelnut.png" alt="Hazelnut Chocolate" class="product_img">
+        </div>
+        <div class="card">
+            <div class="circle"><h2>Caramel</h2></div>
+            <img src="caramel.png" alt="Caramel Chocolate" class="product_img">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Jash Choco Paradise brings you the best handcrafted chocolates with rich flavors and the finest ingredients. Every bite is pure indulgence.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@jashchoco.com</p>
+        <p>Phone: +91 9016852035</p>
+    </section>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navLinks = document.querySelector(".nav-links");
+
+        menuToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #2e1a12;
+    color: #fff;
+    text-align: center;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #3b1e14;
+  padding: 10px 20px;
+  border-radius: 10px; 
+  width: calc(100% - 2cm); 
+  margin: 10px auto; 
+}
+
+/* Logo and Brand Name */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #553023;
+  padding: 10px 20px;
+  border-radius: 50px;
+  width: calc(100% - 2cm);
+  margin: 1cm auto 10px auto; 
+  position: relative;
+}
+
+
+/* Brand Name on Left */
+.brand-name {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: white;
+}
+
+
+/* Centered Rounded Diamond-Shaped Logo */
+.logo-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg); 
+  background: #553023;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 25%; 
+  border: 4px solid #553023; 
+}
+
+
+.nav-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: rotate(-45deg); 
+}
+
+
+
+/* Navigation Links (Aligned Right) */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+/* Hover Effect */
+.nav-links a:hover {
+  color: #d2691e;
+}
+
+
+
+/* Navigation Bar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: #4b2c20;
+}
+
+header h1 {
+    font-size: 1.5em;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    color: #d2691e;
+}
+
+/* Mobile Menu */
+.menu-toggle {
+    font-size: 2em;
+    cursor: pointer;
+    display: none;
+}
+
+.product-container {
+  margin-top: 80px; 
+}
+
+/*  welcome section */
+.hero {
+  min-height: 90vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #d2691e;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background: #8b5a2b;
+}
+
+/* Product Section */
+.product-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px 0;
+}
+
+/* Chocolate Card Effect */
+.card {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.card:hover {
+    width: 250px;
+    height: 250px;
+}
+
+.card .circle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #4b2c20;
+    border: 5px solid #8b5a2b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.card .circle h2 {
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.card:hover .circle h2 {
+    opacity: 0;
+    transform: scale(0);
+}
+
+.card .product_img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    height: 80px;
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover .product_img {
+    transition-delay: 0.5s;
+    height: 200px;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* About Section */
+.about {
+    padding: 50px;
+    background: #3a1d14;
+}
+
+/* Contact Section */
+.contact {
+    padding: 30px;
+    background: #4b2c20;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: #4b2c20;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
