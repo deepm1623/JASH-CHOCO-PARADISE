@@ -304,3 +304,43 @@ nav ul li a:hover {
         z-index: 1001;
     }
 }    
+@media (max-width: 768px) {
+    .brand-name {
+        font-size: 1em;  /* Decrease font size */
+        text-align: left;
+    }
+
+    .logo-container {
+        width: 60px; /* Reduce size */
+        height: 60px;
+        border-radius: 20%; /* Adjust shape */
+        left: 50%;
+        top: 5px;
+        transform: translateX(-50%) rotate(45deg);
+    }
+
+    .nav-logo {
+        transform: rotate(-45deg);
+    }
+
+    .menu-toggle {
+        font-size: 1.8em;
+    }
+}
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .brand-name {
+        flex: 1; /* Allow text to take space */
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    .menu-toggle {
+        margin-right: 10px;
+    }
+}
