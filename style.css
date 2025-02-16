@@ -23,13 +23,11 @@ body {
   margin: 10px auto; 
 }
 
-/* Logo and Brand Name */
 .logo-container {
   display: flex;
   align-items: center;
 }
 
-/* Navbar Styling */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -42,16 +40,12 @@ body {
   position: relative;
 }
 
-
-/* Brand Name on Left */
 .brand-name {
   font-size: 1.2em;
   font-weight: bold;
   color: white;
 }
 
-
-/* Centered Rounded Diamond-Shaped Logo */
 .logo-container {
   position: absolute;
   left: 50%;
@@ -75,9 +69,6 @@ body {
   transform: rotate(-45deg); 
 }
 
-
-
-/* Navigation Links (Aligned Right) */
 .nav-links {
   list-style: none;
   display: flex;
@@ -90,14 +81,10 @@ body {
   font-weight: 600;
 }
 
-/* Hover Effect */
 .nav-links a:hover {
   color: #d2691e;
 }
 
-
-
-/* Navigation Bar */
 header {
     display: flex;
     justify-content: space-between;
@@ -129,7 +116,6 @@ nav ul li a:hover {
     color: #d2691e;
 }
 
-/* Mobile Menu */
 .menu-toggle {
     font-size: 2em;
     cursor: pointer;
@@ -140,7 +126,6 @@ nav ul li a:hover {
   margin-top: 80px; 
 }
 
-/*  welcome section */
 .hero {
   min-height: 90vh; 
   display: flex;
@@ -178,7 +163,6 @@ nav ul li a:hover {
     background: #8b5a2b;
 }
 
-/* Product Section */
 .product-container {
     display: flex;
     justify-content: center;
@@ -187,7 +171,6 @@ nav ul li a:hover {
     padding: 50px 0;
 }
 
-/* Chocolate Card Effect */
 .card {
     position: relative;
     width: 140px;
@@ -243,19 +226,16 @@ nav ul li a:hover {
     transform: translate(-50%, -50%) scale(1);
 }
 
-/* About Section */
 .about {
     padding: 50px;
     background: #3a1d14;
 }
 
-/* Contact Section */
 .contact {
     padding: 30px;
     background: #4b2c20;
 }
 
-/* 📱 Responsive Design */
 @media (max-width: 768px) {
     header {
         padding: 10px 20px;
@@ -293,3 +273,34 @@ nav ul li a:hover {
         align-items: center;
     }
 }
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide the menu by default */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #553023;
+        width: 200px;
+        border-radius: 10px;
+        padding: 10px 0;
+        text-align: center;
+        z-index: 1000;
+    }
+    
+    .nav-links.active {
+        display: flex; /* Show the menu when active */
+    }
+    
+    .nav-links li {
+        padding: 10px;
+    }
+    
+    .menu-toggle {
+        display: block;
+        font-size: 2em;
+        cursor: pointer;
+        color: white;
+        z-index: 1001;
+    }
+}    

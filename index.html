@@ -9,25 +9,25 @@
 </head>
 <body>
 
-    <!-- Navigation Bar -->
     <header class="navbar">
-        <div class="brand-name">
-            JASH CHOCO PARADISE
-        </div>
+        <div class="brand-name">Jash Choco Paradise</div>
+    
         <div class="logo-container">
             <img src="logo.png" alt="Logo" class="nav-logo">
         </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+    
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    
+        <!-- Hamburger Menu -->
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
     </header>
     
-    <!-- Hero Section -->
+    
     <section id="home" class="hero">
         <div class="hero-content">
             <h2>Welcome to Jash Choco Paradise 🍫</h2>
@@ -36,11 +36,11 @@
         </div>
     </section>
 
-    <!-- Product Showcase -->
     <section id="products" class="product-container">
         <div class="card">
             <div class="circle"><h2>Dark Choco</h2></div>
             <img src="dark.png" alt="Dark Chocolate" class="product_img">
+            
         </div>
         <div class="card">
             <div class="circle"><h2>Milk Choco</h2></div>
@@ -60,13 +60,11 @@
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="about">
         <h2>About Us</h2>
         <p>Jash Choco Paradise brings you the best handcrafted chocolates with rich flavors and the finest ingredients. Every bite is pure indulgence.</p>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="contact">
         <h2>Contact Us</h2>
         <p>Email: support@jashchoco.com</p>
@@ -74,13 +72,16 @@
     </section>
 
     <script>
-        // Mobile Menu Toggle
-        const menuToggle = document.querySelector(".menu-toggle");
-        const navLinks = document.querySelector(".nav-links");
+      document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
 
-        menuToggle.addEventListener("click", () => {
-            navLinks.classList.toggle("active");
-        });
+    menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+    });
+});
+
+
     </script>
 
 </body>
